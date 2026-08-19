@@ -4,7 +4,7 @@
   "description": "AeroOps AI — airport operations backend",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "dev": "tsx watch server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "seed": "ts-node src/seed/index.ts"
@@ -29,7 +29,7 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^26.2.0",
-    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   }
 }
